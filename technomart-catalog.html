@@ -11,7 +11,7 @@
 				<img src="img/index-logo.svg" alt="Лготип интернет-магазина строительных материалов и инструментов для ремонта «Техномарт»">
 			</a>
 			<form>
-				<label>Поиск: <input type="search"></label>
+				<label>Поиск: <input type="search" aria-label="Поиск"></label>
 			</form>		
 			<a href="bookmarks.html" class="bookmarks">Закладки:0</a>
 			<a href="cart.html" class="cart">Корзина:10</a>
@@ -56,7 +56,49 @@
 		<h1>Перфораторы</h1>
 		<section class="filter">
 			<h2>Фильтр</h2>
-			<!--Здесь будет форма-->
+			<form class="filter" method="post" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Производители:</legend>
+					<ul>
+						<li class="filter-option">
+							<input type="checkbox" name="bosch" id="bosch" class="filter-input filter-input-checkbox">
+							<label for="bosch">Bosch</label>
+						</li>            			
+						<li class="filter-option">
+							<input type="checkbox" name="interskol" id="interskol" class="filter-input filter-input-checkbox">
+							<label for="interskol">Интерскол</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="makita" id="makita" class="filter-input filter-input-checkbox">
+							<label for="makita">Makita</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="dewalt" id="dewalt" class="filter-input filter-input-checkbox">
+							<label for="dewalt">Dewalt</label>
+						</li>
+						<li class="filter-option">
+							<input type="checkbox" name="hitachi" id="hitachi" class="filter-input filter-input-checkbox">
+							<label for="hitachi">Hitachi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Питание:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="filter-input filter-input-radio" type="radio" name="power" value="akkum" id="akkum">
+							<label for="akkum">Аккумуляторные</label>
+						</li>
+						<li class="filter-option">
+							<input class="filter-input filter-input-radio" type="radio" name="power" value="setevyye" id="setevyye" checked>
+							<label for="setevyye">Сетевые</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit" class="filter-button button" aria-label="Показать">
+					Показать			
+				</button>
+			</form>
 		</section>
 		<section class="products">
 			<div class="sort">
@@ -215,6 +257,12 @@
 				<li class="pagination-item"><a href="#">3</a></li>
 				<li class="pagination-item"><a href="#">Следующая</a></li>
 			</ul>
+			<div class="added-to-cart">
+				<button class="modal-close" type="button" aria-label="закрыть">закрыть</button>
+				<p>Товар добавлен в корзину!</p>
+				<a href="order.html" aria-label="Оформить заказ">Оформить заказ</a>
+				<button class="modal-close continue-shopping" type="button" aria-label="Продолжить покупки">Продолжить покупки</button>
+			</div>
 		</section>
 	</main>
 	<footer class="main-footer">
@@ -224,11 +272,11 @@
 					<img src="img/index-logo.svg" alt="Лготип интернет-магазина строительных материалов и инструментов для ремонта «Техномарт»">
 				</a>
 				<ul class="main-footer-site-navigation">
-						<li><a href="company.html">Компания</a></li>
-						<li><a href="news.html">Новости</a></li> 
-						<li><a href="catalog.html">Каталог</a></li>
-						<li><a href="delivery.html">Доставка</a></li> 
-						<li><a href="contacts.html">Контакты</a></li> 				
+					<li><a href="company.html">Компания</a></li>
+					<li><a href="news.html">Новости</a></li> 
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="delivery.html">Доставка</a></li> 
+					<li><a href="contacts.html">Контакты</a></li> 				
 				</ul>
 			</div>
 			<div>	
