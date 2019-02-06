@@ -10,13 +10,15 @@
 			<a class="main-header-logo">
 				<img src="img/index-logo.svg" alt="Лготип интернет-магазина строительных материалов и инструментов для ремонта «Техномарт»">
 			</a>
-			<form>
-				<label>Поиск: <input type="search"></label>
+			<form class="search" action="https://echo.htmlacademy.ru" method="post">
+				<button class="search-panel-submit" type="submit"></button>
+				<input type="search" id="site-search" placeholder="Поиск">			
 			</form>		
 			<a href="bookmarks.html" class="bookmarks">Закладки:0</a>
 			<a href="cart.html" class="cart">Корзина:10</a>
 			<a href="order.html" class="make-order">Оформить заказ</a>
 		</div>
+
 		<div>		
 			<h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<p class="main-header-contacts">
@@ -28,11 +30,12 @@
 				<a href="exit-link">Выйти</a>				
 			</div>
 		</div>
+
 		<nav class="site-navigation">
 			<ul>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="company.html">Компания</a></li>
-				<li><a href="catalog.html">Каталог</a></li> 
+				<li><a href="technomart-catalog.html">Каталог</a></li> 
 				<li><a href="news.html">Новости</a></li> 
 				<li><a href="special-offers.html">Спецпредложения</a></li> 
 				<li><a href="delivery.html">Доставка</a></li> 
@@ -59,6 +62,17 @@
 			<div class="contacts-map"><img src="img/map.jpg" alt="Карта" width="300" height="158"></div>
 			<a href="feedback.html">Заблудилсь? Напишите нам</a>
 		</section>
+		<form class="feedback" method="post" action="https://echo.htmlacademy.ru">
+			<p>
+				<label class="feedback-label" for="name">Ваше имя:</label>
+				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+				<label class="feedback-label" for="e-mail">Ваш e-mail:</label>
+				<input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+			</p>
+			<label class="feedback-label" for="message">Текст письма:</label>
+			<textarea name="text" id="message" placeholder="В свободной форме" class="feedback-textarea"></textarea>
+			<button type="submit" class="button feedback-button">Отправить</button>	
+		</form>
 	</main>
 	<footer class="main-footer">
 		<div class="footer-top">
@@ -69,7 +83,7 @@
 				<ul class="main-footer-site-navigation">
 						<li><a href="company.html">Компания</a></li>
 						<li><a href="news.html">Новости</a></li> 
-						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="technomart-catalog.html">Каталог</a></li>
 						<li><a href="delivery.html">Доставка</a></li> 
 						<li><a href="contacts.html">Контакты</a></li> 				
 				</ul>
