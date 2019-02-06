@@ -11,11 +11,8 @@
 				<img src="img/index-logo.svg" alt="Лготип интернет-магазина строительных материалов и инструментов для ремонта «Техномарт»">
 			</a>
 			<form class="search" action="https://echo.htmlacademy.ru" method="post">
-				<button class="search-panel-submit" type="submit">
-					<img src="img/icon-search.svg" width="17" height="17" alt="Поиск">
-				</button>
-				<label for="site-search">Поиск:</label>
-				<input type="search" id="site-search">				
+				<button class="search-panel-submit" type="submit"></button>
+				<input type="search" id="site-search" placeholder="Поиск">			
 			</form>		
 			<a href="bookmarks.html" class="bookmarks">Закладки:0</a>
 			<a href="cart.html" class="cart">Корзина:10</a>
@@ -67,13 +64,13 @@
 		</section>
 		<form class="feedback" method="post" action="https://echo.htmlacademy.ru">
 			<p>
-				<label for="name">Ваше имя:</label>
+				<label class="feedback-label" for="name">Ваше имя:</label>
 				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
-				<label for="e-mail">Ваш e-mail:</label>
+				<label class="feedback-label" for="e-mail">Ваш e-mail:</label>
 				<input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
 			</p>
-			<label for="message">Текст письма:</label>
-			<textarea name="text" id="message" placeholder="В свободной форме"></textarea>
+			<label class="feedback-label" for="message">Текст письма:</label>
+			<textarea name="text" id="message" placeholder="В свободной форме" class="feedback-textarea"></textarea>
 			<button type="submit" class="button feedback-button">Отправить</button>	
 		</form>
 	</main>
