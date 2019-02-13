@@ -3,10 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Интернет-магазин строительных материалов и инструментов для ремонта</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
-		<div>		
+		<div class="header-top">		
 			<a class="main-header-logo">
 				<img src="img/index-logo.svg" alt="Лготип интернет-магазина строительных материалов и инструментов для ремонта «Техномарт»">
 			</a>
@@ -24,11 +27,11 @@
 				<span class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
 			</p>
 			<div class="account-links">
-				<span>
+				<span class="account-links-top">
 					<a href="profile.html">"иконка пользователя" Равшан Джамшутович</a>
 					<a href="deauthorization.html">иконка выхода</a>
 				</span>
-				<span>	
+				<span class="account-links-bottom">	
 					<a href="user-orders.html">Мои заказы</a>
 					<a href="user-cabinet.html">Личный кабинет</a>
 				</span>					
@@ -51,17 +54,19 @@
 			<li><a href="index.html">Главная страница</a>
 			<li><a href="catalog.html">Каталог</a>
 			<li><a href="instrument.html">Инструмент</a>
-			<li>Перфораторы</li>
+			<li class="breadcrumbs-current">Перфораторы</li>
 		</ul>
-		<h1>Перфораторы</h1>
-		<section class="filter">
+		<div class="catalog-main-header">
+				<h1>Перфораторы</h1>
+		</div>
+		<section class="catalog-filter">
 			<h2>Фильтр</h2>
-			<form class="filter" method="post" action="https://echo.htmlacademy.ru">
+			<form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Производители:</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="checkbox" name="bosch" id="bosch" class="filter-input filter-input-checkbox">
+							<input type="checkbox" name="bosch" id="bosch" class="filter-input filter-input-checkbox" disabled>
 							<label for="bosch">Bosch</label>
 						</li>            			
 						<li class="filter-option">
@@ -110,9 +115,9 @@
 					<span class="new-item">new</span>
 					<div>
 						<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+						<p class="catalog-item-button">            			
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>
 					<a href="catalog-item.html">
@@ -127,8 +132,8 @@
 					<div>
 						<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>
 					<a href="catalog-item.html">
@@ -143,8 +148,8 @@
 					<div>
 						<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>	
 					<a href="catalog-item.html">
@@ -159,8 +164,8 @@
 					<div>
 						<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>
 					<a href="catalog-item.html">
@@ -175,8 +180,8 @@
 					<div>
 						<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>
 					<a href="catalog-item.html">
@@ -191,8 +196,8 @@
 					<div>
 						<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>	
 					<a href="catalog-item.html">
@@ -207,8 +212,8 @@
 					<div>
 						<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>
 					<a href="catalog-item.html">
@@ -223,8 +228,8 @@
 					<div>
 						<img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>
 					<a href="catalog-item.html">
@@ -239,8 +244,8 @@
 					<div>
 						<img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 						<p class="catalog-item-button">              			
-							<a class="button" href="#">Купить</a>
-							<a class="button" href="#">Добавить в закладки</a>
+							<a class="button buy" href="#">Купить</a>
+							<a class="button bookmarks" href="#">Добавить в закладки</a>
 						</p>
 					</div>	
 					<a href="catalog-item.html">
