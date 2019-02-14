@@ -3,10 +3,8 @@ body {
 	padding: 0;
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 13px;
-    font-weight: normal;
 	line-height: 24px;
 	color: #000000;
-
 	background-color: #ffffff;
 }
 
@@ -22,7 +20,6 @@ a {
 	font-size: 17px;
 	line-height: 18px;
 	color: #ffffff;
-
 	background-color: #293449;
 }
 
@@ -49,15 +46,15 @@ a {
 	color: #000000;
 }
 
-.header-top a.make-order {
+a.make-order {
 	background-color: #63a63e;
 }
 
-.header-top a.make-order:hover {
+a.make-order:hover {
 	background-color: #5fbb2d;
 }
 
-.header-top a.make-order:active {
+a.make-order:active {
 	background-color: #518534;
 	color: rgba(255, 255, 255, 0.5);
 }
@@ -100,14 +97,6 @@ h1.main-page-title {
 	background-color: #32425c;
 }
 
-.site-navigation ul,
-.ts-companies,
-.main-footer-site-navigation,
-.main-footer-catalog-navigation,
-.footer-social {
-	list-style: none;
-}
-
 .site-navigation a {
 	color: #ffffff;
 }
@@ -125,7 +114,6 @@ div.index-columns {
 	font-size: 13px;
 	font-style: normal;
 	line-height: 24px;
-	color: #ffffff;
 	background-color: #ffffff;	
 }
 
@@ -206,12 +194,6 @@ div.index-columns {
 	text-decoration: underline;
 }
 
-.breadcrumbs,
-.catalog-filter ul,
-.products ul {
-	list-style: none;
-}
-
 .breadcrumbs a {
 	color: #000000;
 }
@@ -264,7 +246,6 @@ div.index-columns {
 
 .filter-input:disabled + label {
   color: #000000;
-
   opacity: 0.5;
 }
 
@@ -305,7 +286,7 @@ div.index-columns {
 	background-color: #ee3643;
 }
 
-a.button.buy {
+.button.buy {
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -313,16 +294,16 @@ a.button.buy {
 	background-color: #63a63e;
 }
 
-a.button.buy:hover {
+.button.buy:hover {
 	background-color: #5fbb2d;
 }
 
-a.button.buy:active {
+.button.buy:active {
 	background-color: #518534;
 }
 
 
-a.button.bookmarks {
+.button.bookmarks {
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -331,11 +312,15 @@ a.button.bookmarks {
 	border-color: #63a63e;
 }
 
-a.button.bookmarks:hover {
+.button.bookmarks:hover {
 	border-color: #32425c;
 }
 
-a.button.bookmarks:active {
+.button.bookmarks:active {
 	color: rgba(50, 66, 92, 0.3);
 	border-color: rgba(50, 66, 92, 0.3);
+}
+
+.list-unstyled {
+	list-style: none;
 }
