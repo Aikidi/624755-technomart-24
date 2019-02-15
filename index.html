@@ -3,10 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Интернет-магазин строительных материалов и инструментов для ремонта</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
-		<div>		
+		<div class="header-top">		
 			<a class="main-header-logo">
 				<img src="img/index-logo.svg" alt="Лготип интернет-магазина строительных материалов и инструментов для ремонта «Техномарт»">
 			</a>
@@ -19,20 +22,20 @@
 			<a href="order.html" class="make-order">Оформить заказ</a>
 		</div>
 
-		<div>		
-			<h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+		<div class="header-middle">		
+			<h1 class="main-page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<p class="main-header-contacts">
 				<span class="number">+7(812)555-05-05</span>
 				<span class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
 			</p>
 			<div class="account-links">
 				<a href="login-link">Войти</a>
-				<a href="exit-link">Выйти</a>				
+				<a href="exit-link">Регистрация</a>				
 			</div>
 		</div>
 
 		<nav class="site-navigation">
-			<ul>
+			<ul class="list-unstyled">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="company.html">Компания</a></li>
 				<li><a href="technomart-catalog.html">Каталог</a></li> 
@@ -44,35 +47,37 @@
 		</nav>
 	</header>
 	<main class="contaier">
-		<section class="about-company">
-			<h2>Компания «Техномарт»</h2>
-			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-			<p>Мы можем доставить ваш товар в самые отдаленные точки России!
-			Техномарт работает со многими транспортными компаниями: </p>
-			<ul class="ts-companies">
-				<li>Деловые линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
-			</ul>
-			<a href="company.html">Подробнее о компании</a>
-		</section>
-		<section class="contacts">
-			<h2>Контакты</h2>
-			<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-			<div class="contacts-map"><img src="img/map.jpg" alt="Карта" width="300" height="158"></div>
-			<a href="feedback.html">Заблудилсь? Напишите нам</a>
-		</section>
-		<form class="feedback" method="post" action="https://echo.htmlacademy.ru">
-			<p>
-				<label class="feedback-label" for="name">Ваше имя:</label>
-				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
-				<label class="feedback-label" for="e-mail">Ваш e-mail:</label>
-				<input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
-			</p>
-			<label class="feedback-label" for="message">Текст письма:</label>
-			<textarea name="text" id="message" placeholder="В свободной форме" class="feedback-textarea"></textarea>
-			<button type="submit" class="button feedback-button">Отправить</button>	
-		</form>
+		<div class="index-columns">
+			<section class="about-company">
+				<h2>Компания «Техномарт»</h2>
+				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+				Техномарт работает со многими транспортными компаниями: </p>
+				<ul class="ts-companies list-unstyled">
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="company.html">Подробнее о компании</a>
+			</section>
+			<section class="contacts">
+				<h2>Контакты</h2>
+				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+				<div class="contacts-map"><img src="img/map.jpg" alt="Карта" width="300" height="158"></div>
+				<a href="feedback.html">Заблудилсь? Напишите нам</a>
+			</section>
+			<form class="feedback" method="post" action="https://echo.htmlacademy.ru">
+				<p>
+					<label class="feedback-label" for="name">Ваше имя:</label>
+					<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+					<label class="feedback-label" for="e-mail">Ваш e-mail:</label>
+					<input type="text" name="e-mail" id="e-mail" placeholder="email@example.com">
+				</p>
+				<label class="feedback-label" for="message">Текст письма:</label>
+				<textarea name="text" id="message" placeholder="В свободной форме" class="feedback-textarea"></textarea>
+				<button type="submit" class="button feedback-button">Отправить</button>	
+			</form>
+		</div>	
 	</main>
 	<footer class="main-footer">
 		<div class="footer-top">
@@ -80,7 +85,7 @@
 				<a class="main-footer-logo">
 					<img src="img/index-logo.svg" alt="Лготип интернет-магазина строительных материалов и инструментов для ремонта «Техномарт»">
 				</a>
-				<ul class="main-footer-site-navigation">
+				<ul class="main-footer-site-navigation list-unstyled">
 						<li><a href="company.html">Компания</a></li>
 						<li><a href="news.html">Новости</a></li> 
 						<li><a href="technomart-catalog.html">Каталог</a></li>
@@ -88,11 +93,11 @@
 						<li><a href="contacts.html">Контакты</a></li> 				
 				</ul>
 			</div>
-			<div>	
+			<div class="footer-middle">	
 				<p class="main-footer-contacts">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
 					<span>+7(812)555-05-05</span>
 				</p>
-				<ul class="main-footer-catalog-navigation">
+				<ul class="main-footer-catalog-navigation list-unstyled">
 					<li><a href="materials.html">Материалы</a></li>
 					<li><a href="devices.html">Техника</a></li>
 					<li><a href="instruments.html">Инструмент</a></li>
@@ -103,7 +108,7 @@
 		<div class="footer-bottom">
 			<p class="copyright"><span>©</span> 2010–2019 Компания «Техномарт»
 			Все права защищены</p>
-			<ul class="footer-social">
+			<ul class="footer-social list-unstyled">
 				<li><a class="social-button" href="#">Вконтакте</a></li>
 				<li><a class="social-button" href="#">Фейсбук</a></li>
 				<li><a class="social-button" href="#">Инстаграм</a></li>
