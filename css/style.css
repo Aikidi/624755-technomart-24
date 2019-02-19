@@ -38,11 +38,6 @@ a {
 	flex-direction: column;
 }
 
-.main-header-logo {
-	width: 220px;
-	height: 42px;
-}
-
 .header-top {
 	font-size: 17px;
 	line-height: 18px;
@@ -62,8 +57,9 @@ a {
 .header-top .bookmarks,
 .header-top .cart,
 .header-top .make-order {
-	width: 150px;
-	height: 42px;
+	min-width: 150px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 	margin: 0;
 }
 
@@ -104,7 +100,7 @@ a.make-order:active {
 }
 
 .header-middle {
-    padding-bottom: 44px;
+	padding-bottom: 44px;
 	padding-top: 44px;
 }
 
@@ -113,18 +109,18 @@ a.make-order:active {
 	justify-content: space-between;
 }
 
-h1.main-page-title {
+.main-page-title {
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
 	color: #ee3643;
 	margin: 0;
 	margin-left: 44px;
-	width: 196px;
+	padding-right: 71px;
 }
 
-.main-header-contacts {
-	width: 270px;
+p.main-page-title {
+	font-weight: bold;
 }
 
 .main-header-contacts .number {
@@ -170,7 +166,8 @@ h1.main-page-title {
 .site-navigation a {
 	color: #ffffff;
 	display: inline-block;
-	height: 60px;
+	padding-top: 22px;
+	padding-bottom: 22px;
 }
 
 .site-navigation a:hover {
@@ -215,11 +212,7 @@ h1.main-page-title {
 }
 
 .about-company {
-	width: 519px;
-}
-
-.contacts {
-	width: 300px;
+	margin-right: 120px;
 }
 
 .about-company a:active,
@@ -234,11 +227,6 @@ h1.main-page-title {
 
 .footer-top {
 	display: flex;
-}
-
-.main-footer-logo {
-	width: 220px;
-	height: 68px;
 }
 
 .main-footer-site-navigation {
@@ -259,10 +247,6 @@ h1.main-page-title {
 
 .footer-middle {
 	display: flex;
-}
-
-.main-footer-contacts {
-	width: 322px;
 }
 
 .main-footer-catalog-navigation {
@@ -360,7 +344,7 @@ h1.main-page-title {
 }
 
 .catalog-filter {
-	width: 220px;
+	min-width: 220px;
 }
 
 .catalog-filter fieldset {
@@ -398,7 +382,7 @@ h1.main-page-title {
 }
 
 .products {
-	width: 700px;
+	min-width: 700px;
 }
 
 .catalog-list {
@@ -410,8 +394,6 @@ h1.main-page-title {
 
 .catalog-item {
 	background-color: #ffffff;
-	width: 220px;
-	height: 318px;
 	margin-bottom: 21px;	
 }
 
