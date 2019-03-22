@@ -631,6 +631,10 @@ a.exit-link {
 	border:none;
 }
 
+.banner-button:focus {
+  outline-style: none;
+}
+
 .banner-button-back {
 	top: 118px;
 	left: 28px;
