@@ -79,16 +79,18 @@
 				</li>		
 			</ul>
 			<div class="catalog-offers-banners">
-				<div class="banners-items item-1">
-					<h3>Дрели</h3>
-					<span class="banner-content">Соседям на радость</span>					
+		        <input type="hidden" id="banner_max" value=2>
+		        <input type="hidden" id="banner_count" value=1>
+		        <div id="banner-1" class="banners-items item-1">
+		        	<h3>Дрели</h3>
+		        	<span class="banner-content">Соседям на радость</span>    
+		        </div>
+				<div id="banner-2" class="banners-items item-2 visually-hidden">
+				<h3>Перфораторы</h3>
+				<span class="banner-content">Настоящие мужские игрушки</span>
 				</div>
-				<div class="banners-items item-2 visually-hidden">
-					<h3>Перфораторы</h3>
-					<span class="banner-content">Настоящие мужские игрушки</span>					
-				</div>
-				<button class="button banner-button banner-button-back" type="button" disabled title="Назад"></button>
-				<button class="button banner-button banner-button-next" type="button" disabled title="Вперед"></button>
+				<button class="button banner-button banner-button-back" type="button"  title="Назад" onclick="chBanner(-1);"></button>
+				<button class="button banner-button banner-button-next" type="button"  title="Вперед" onclick="chBanner(1);"></button>
 				<a class="button open-catalog" href="technomart-catalog.html">открыть каталог</a>
 			</div>	
 		</section>
